@@ -1,0 +1,48 @@
+<!-- MAIN WRAPPER -->
+<div class="body-wrap shop-default shop-minimalist">
+    <div id="st-container" class="st-container">
+
+    	<%= render 'statics/nav_slide' %>
+
+        <div class="st-pusher">
+            <div class="st-content">
+                <div class="st-content-inner">
+                    <!-- HEADER -->
+                    <div class="header">
+    <!-- Top Bar -->
+
+    <%= render 'statics/global_search' %>
+
+    <%= render 'statics/navbar' %>
+
+    <!-- Product -->
+
+    <%= render 'items/product_sheet' %>
+
+    <!-- You May Also Like -->
+
+    <%= render 'statics/you_may_also_like' %>
+
+    <!-- FOOTER -->
+
+    <%= render 'statics/footer' %>
+
+                </div>
+            </div>
+        </div><!-- END: st-pusher -->
+    </div><!-- END: st-container -->
+</div><!-- END: body-wrap -->
+
+<script>
+$('#slideshow').desoSlide({
+    thumbs: $('#slideshow_thumbs .swiper-slide > a'),
+    thumbEvent: 'click',
+    first: 0,
+    effect: 'none',
+    overlay: 'none',
+    controls: {
+        show: false,
+        keys: false
+    },
+});
+</script>

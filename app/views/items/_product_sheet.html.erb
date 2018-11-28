@@ -1,0 +1,142 @@
+<section class="slice bg-minimalist">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="swiper-js-container">
+                                        <div class="swiper-container" data-swiper-items="1" data-swiper-space-between="0">
+                                            <div class="swiper-wrapper pb-5">
+                                                <div class="swiper-slide">
+                                                    <%= image_tag @item.image_url, class:"img-fluid" %>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <%= image_tag "img-sq-2.png", class:"img-fluid" %>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <%= image_tag "img-sq-3.png", class:"img-fluid" %>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-5 ml-lg-auto">
+                                    <div class="product-description-wrapper">
+                                        <!-- Product title -->
+                                        <h2 class="heading heading-4 strong-600 text-capitalize">
+                                            <%= @item.title %>
+                                        </h2>
+                                        <span class="heading heading-light heading-5 strong-600 mt-3">
+                                            €<%= @item.price %>
+                                        </span>
+
+                                        <span class="space-xs-md"></span>
+
+                                        <div class="row">
+                                            <div class="col-lg-8">
+                                                <div class="form-default">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <ul class="list-inline checkbox-color checkbox-color-circle">
+                                                                <li>
+                                                                    <input type="radio" id="color-1" name="color" checked="">
+                                                                    <label style="background: #38393d;" for="color-1" data-toggle="tooltip" data-original-title="Black"></label>
+                                                                </li>
+                                                                <li>
+                                                                    <input type="radio" id="color-2" name="color">
+                                                                    <label style="background: #bfc0c2;" for="color-2" data-toggle="tooltip" data-original-title="Gray"></label>
+                                                                </li>
+                                                                <li>
+                                                                    <input type="radio" id="color-3" name="color">
+                                                                    <label style="background: #eabfb9;" for="color-3" data-toggle="tooltip" data-original-title="Rose"></label>
+                                                                </li>
+                                                                <li>
+                                                                    <input type="radio" id="color-4" name="color">
+                                                                    <label style="background: #000000;" for="color-4" data-toggle="tooltip" data-original-title="Black"></label>
+                                                                </li>
+                                                                <li>
+                                                                    <input type="radio" id="color-5" name="color">
+                                                                    <label style="background: #dcc4ac;" for="color-5" data-toggle="tooltip" data-original-title="Gold"></label>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row mt-2">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <select class="form-control form-control-lg">
+                                                                    <option>Size</option>
+                                                                    <option>S</option>
+                                                                    <option>M</option>
+                                                                    <option>L</option>
+                                                                    <option>XL</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <input type="text" class="form-control form-control-lg text-center" value="1">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-2">
+                                                        <div class="col-12">
+                                                            <!-- Add to cart button -->
+                                                            <button type="button" class="btn btn-lg btn-block btn-gray-dark btn-icon-left">
+                                                                <i class="icon ion-bag"></i> Add to cart
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Rating stars -->
+                                        <div class="rating mt-2">
+                                            <span class="star voted" rel="1"></span>
+                                            <span class="star voted" rel="2"></span>
+                                            <span class="star voted" rel="3"></span>
+                                            <span class="star" rel="4"></span>
+                                            <span class="star" rel="5"></span>
+
+                                            <span class="rating-count">(2 customer reviews)</span>
+                                        </div>
+
+                                        <span class="space-xs-md"></span>
+
+                                        <!-- Product description -->
+                                        <div class="product-short-text">
+                                            <p>
+                                                <%= @item.description %>
+                                            </p>
+
+                                            <ul class="icons mt-4">
+                                                <li class="text-sm">
+                                                    <i class="icon icon-clothes-029"></i> Exterior: 98% cotton, 2% elastane
+                                                </li>
+                                                <li class="text-sm">
+                                                    <i class="icon icon-electronics-002"></i> Machine wash up to 30&deg;/86&deg;F gentle cycle
+                                                </li>
+                                                <li class="text-sm">
+                                                    <i class="icon icon-electronics-043"></i> Iron up to 110&deg;C/230&deg;F
+                                                </li>
+                                            </ul>
+
+                                            <ul class="inline-links inline-links--style-1 mt-4">
+                                                <li>
+                                                    <a href="#">Twitter</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Facebook</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Pinterest</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
